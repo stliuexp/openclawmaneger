@@ -12,7 +12,15 @@
     "dev:backend": "npm run dev --workspace=@openclaw-manager/backend",
     "build": "npm run build --workspace=@openclaw-manager/web"
   },
-  "keywords": ["openclaw", "desktop", "manager", "tauri"],
+  "keywords": [
+    "openclaw",
+    "desktop",
+    "manager",
+    "tauri"
+  ],
   "author": "OpenClaw Team",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.10.1"
+  }
 }

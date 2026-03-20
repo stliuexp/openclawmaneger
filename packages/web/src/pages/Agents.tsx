@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 import { platform } from '@/adapters'
-import type { OpenClawConfig, AgentInfo } from '@/lib/types'
+import type { OpenClawConfig } from '@/lib/types'
 
 export default function Agents() {
   const [config, setConfig] = useState<OpenClawConfig | null>(null)

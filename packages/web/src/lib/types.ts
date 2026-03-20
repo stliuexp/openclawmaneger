@@ -56,26 +56,29 @@ export interface GatewayStatus {
 }
 
 export interface OpenClawConfig {
-  gateway: {
-    port: number
-    mode: string
-    bind: string
-    auth: { mode: string; token?: string }
+  gateway?: {
+    port?: number
+    mode?: string
+    bind?: string
+    auth?: { mode?: string; token?: string }
   }
-  agents: {
-    defaults: {
-      model: { primary: string }
-      workspace: string
+  agents?: {
+    defaults?: {
+      model?: { primary?: string }
+      workspace?: string
+      maxConcurrent?: number
     }
-    list: Array<{
+    list?: Array<{
       id: string
       name?: string
       workspace?: string
       model?: string
+      agentDir?: string
     }>
   }
-  channels: Record<string, any>
-  models: Record<string, any>
+  channels?: Record<string, any>
+  models?: { providers?: Record<string, any> }
+  bindings?: Array<{ match?: { channel: string }; agentId: string }>
   [key: string]: any
 }
 

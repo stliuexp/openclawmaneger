@@ -16,7 +16,7 @@ import type { SystemInfo } from './lib/types'
 
 function App() {
   const [startupState, setStartupState] = useState<'detecting' | 'ready'>('detecting')
-  const [systemInfo, setSystemInfo] = useState<SystemInfo | null>(null)
+  const [, setSystemInfo] = useState<SystemInfo | null>(null)
 
   const handleDetected = (info: SystemInfo) => {
     setSystemInfo(info)

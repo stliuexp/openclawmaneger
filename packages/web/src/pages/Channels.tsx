@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { platform } from '@/adapters'
-import type { OpenClawConfig, ChannelInfo } from '@/lib/types'
+import type { OpenClawConfig } from '@/lib/types'
 
 export default function Channels() {
   const [config, setConfig] = useState<OpenClawConfig | null>(null)

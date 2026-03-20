@@ -51,9 +51,6 @@ export default function Dashboard() {
 
   // 计算通道数量
   const channelCount = config?.channels ? Object.keys(config.channels).length : 0
-  const enabledChannels = config?.channels 
-    ? Object.entries(config.channels).filter(([_, ch]: [string, any]) => ch.enabled).length 
-    : 0
 
   // 计算代理数量
   const agentCount = config?.agents?.list?.length || 0

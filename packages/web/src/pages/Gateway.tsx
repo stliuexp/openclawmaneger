@@ -6,7 +6,6 @@ export default function Gateway() {
   const [status, setStatus] = useState<GatewayStatus | null>(null)
   const [config, setConfig] = useState<OpenClawConfig | null>(null)
   const [loading, setLoading] = useState(true)
-  const [logs, setLogs] = useState<string[]>([])
 
   useEffect(() => {
     loadData()
