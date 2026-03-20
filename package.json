@@ -1,0 +1,18 @@
+{
+  "name": "openclaw-manager",
+  "version": "0.1.0",
+  "private": true,
+  "description": "龙虾管家 - OpenClaw 图形化管理工具",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=@openclaw-manager/web",
+    "dev:web": "npm run dev --workspace=@openclaw-manager/backend & npm run dev --workspace=@openclaw-manager/web",
+    "dev:backend": "npm run dev --workspace=@openclaw-manager/backend",
+    "build": "npm run build --workspace=@openclaw-manager/web"
+  },
+  "keywords": ["openclaw", "desktop", "manager", "tauri"],
+  "author": "OpenClaw Team",
+  "license": "MIT"
+}
